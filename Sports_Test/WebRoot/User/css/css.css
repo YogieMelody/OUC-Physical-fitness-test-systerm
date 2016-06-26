@@ -1,0 +1,647 @@
+body{
+  width: 100%;
+  height: 100%;
+  font-family: 微软雅黑;
+  font-size: 14px;
+  margin: 0;
+  color: #1d86ca;
+}
+button{
+  outline: none;
+  border: none;
+  font-family:微软雅黑;
+}
+table tr{
+  display: block;
+}
+td{
+  font-size:14px;
+  display:inline-block;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+.clear{
+  clear: both;
+}
+.header{
+  width: 100%;
+  min-width: 1349px;
+  border-top: 2px solid #f0f0f0;
+}
+.logo{
+  border-right:  2px solid #f0f0f0;
+  border-bottom:  2px solid #f0f0f0;
+  float: left;
+  width: 258px;
+}
+.logo img{
+  display: block;
+  margin: 0 auto;
+}
+.mainlist{
+  float: left;
+  width: 40%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.mainlist li{
+  width: 40%;
+  text-align: center;
+  line-height: 116px;
+  float: left;
+  font-size: 18px;
+  border-right: 2px solid #f0f0f0;
+}
+.mainlist a{
+  color: #1d86ca;
+  padding: 46px 40px;
+}
+.mainlist li:hover {
+  border-bottom: 3px solid #1d86ca;
+}
+/*@media screen and (max-width: 960px) {
+    .mainlist{display: none;}
+　　}*/
+.main{
+  height:100%;
+  min-width: 1349px;
+}
+.side{
+  float: left;
+  width: 258px;
+  height: 100%;
+}
+.info{
+  height: 120px;
+  border-bottom: 2px solid #f0f0f0;
+}
+.info ul{
+  padding: 10px 30px 2px 30px;
+}
+.info li{
+  margin: 0 0 10px 0;
+}
+.info span{
+  overflow: hidden;
+  height: 20px;
+  display: inline-block;
+}
+.info a{
+  font-size: 12px;
+  color: #b9b9b9;
+  padding: 0 10px;
+  float: right;
+}
+.list{
+  list-style: none;
+  margin: 75px auto;
+  width: 
+}
+.list li{
+  height: 80px;
+  width: 60%;
+  line-height: 80px;
+  padding: 0 20px;
+  border-left: 5px solid #a2d0f1;
+}
+.list li a{
+  padding: 30px 0;
+  color: #2d2d2d;
+  font-size: 16px;
+  font-weight: 590;
+}
+.list li:hover{
+  border-left: 5px solid #1d86ca;
+}
+.list li:hover a{
+    color: #1d86ca;
+}
+.mainbody{
+  float: left;
+  background: #edf0f5;
+  width: 80.74%;
+  height: 100%;
+}
+.mainbody form{
+  margin:0;
+}
+.guide{
+  background: #f8f9fb;
+  height: 50px;
+  width: 100%;
+}
+.guide span{
+  line-height: 50px;
+  margin-left: 15px;
+}
+.guide span:first-child{
+  color: #000;
+  margin-left: 40px;
+}
+.guide a{
+  color:#1d86ca;
+}
+.body{
+  padding: 35px;
+  background: #fff;
+  width: 80%;
+  margin: 40px auto 0 auto;
+  height: 80%;
+}
+.body h2{
+  float: left;
+}
+.body span{
+  float: right;
+  display: block;
+  line-height: 45px;
+  font-size: 12px;
+  margin-right: 50px;
+  margin-top: 15px;
+}
+.new ul{
+  height: 200px;
+}
+.new ul li{
+  height: 40px;
+  border-bottom:2px solid #ededed;
+  margin-right: 50px;
+}
+.new  ul li div{
+  margin-top: 12px;
+}
+.circle{
+  float: left;
+  width: 18px;
+  height: 18px;
+  background: #1d86ca;
+  border-radius: 50%;
+  margin: 12px;
+}
+.new ul li a:hover div{
+  color:#1d86ca;
+}
+.new_info{
+  float: left;
+  margin-left: 10px;
+  color: #494949;
+}
+.new_time{
+  float: right;
+  margin-right: 50px;
+  color: #494949;
+}
+.term ul{
+  height: 160px;
+}
+.term ul li div{
+  float: left;
+  margin-top: 12px;
+  color: #494949;
+}
+.term ul li{
+  height: 40px;
+  border-bottom:2px solid #ededed;
+  margin-right: 50px;
+}
+.term ul li button:hover{
+  background: #1d86ca;
+}
+.term ul li button{
+  float: right;
+  font-size: 12px;
+  padding: 0;
+  margin-top: 6px;
+  margin-right: 50px;
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  background: #a2d0f1;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+.term_info{
+  margin-left: 20px;
+  margin-right: 140px;
+  color: #494949;
+}
+#choose{
+  height: 240px;
+  width: 300px;
+  background: rgba(255,255,255,0.8);
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  border: 1px solid #1d86ca;
+}
+.cancel{
+  height: 25px;
+  width: 25px;
+  background: url(../img/cancel.png);
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 23px;
+}
+#choose h3{
+  margin: 25px 0 25px 25px;
+}
+#choose button{
+  background: #a2d0f1;
+  margin: 15px auto;
+  text-align: center;
+  line-height: 35px;
+  display: block;
+  height: 35px;
+  width: 174px;
+  color: #fff;
+  cursor:pointer;
+}
+#choose button:hover{
+  background: #1d86ca;
+}
+/*首页*/
+.mainbody .input_grade{
+	margin:80px 0 0 75px;
+}
+.input_grade .button{
+  font-size: 12px;
+  margin-top: 6px;
+  margin-right: 10px;
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  background: #a2d0f1;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+.input_grade .button:hover{
+  background: #1d86ca;
+}
+.title{
+	margin-left:75px;
+}
+.class_info{
+  margin-left:75px;
+  color: #494949;
+}
+.class_info tr{
+  border-bottom:2px solid #ededed;
+}
+.class_info td{
+  height: 40px;
+  line-height: 40px;
+}
+.fir_title{
+  width: 200px;
+}
+.sec_title{
+  width: 100px;
+}
+.thi_title{
+  width: 220px;
+}
+.for_title{
+  width: 84px;
+}
+.fif_title{
+  width: 100px;
+}
+.fif_title button{
+  float: right;
+  font-size: 12px;
+  margin-top: 6px;
+  margin-right: 10px;
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  background: #a2d0f1;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+.final_title button{
+  float: right;
+  font-size: 12px;
+  margin-top: 6px;
+  margin-right: 10px;
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  background: #a2d0f1;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+.class_info button:hover{
+  background: #1d86ca;
+}
+.changelist li{
+  float: right;
+  margin:20px 15px;
+}
+.changelist button{
+  color: #1d86ca;
+  background:none;
+  cursor:pointer;
+}
+.changelist li:first-child{
+  margin-right:5px;
+}
+.changelist li:last-child{
+  margin-right:25px;
+}
+.changelist form{
+  float: right;
+}
+.changelist input{
+  width:20px;
+  margin: 20px 0;
+  float:right;
+}
+.changelist span{
+  margin:6px 5px;
+  font-size:14px;
+}
+/*测试成绩查询2*/
+.classes{
+  margin-left: 55px;
+}
+.classes table tr:last-child{
+  line-height: 40px;
+  color: #494949;
+}
+.grade{
+  margin:20px 0 0 55px;
+}
+.grade td{
+  width: 125px;
+  line-height: 40px;
+}
+.grade tr:nth-child(2n){
+  color:#494949;
+}
+.password form{
+  position: relative;
+  margin-left: 250px;
+  margin-top: 100px;
+}
+.password input{
+  font-family: 微软雅黑;
+  font-size: 16px;
+  height: 28px;
+  width: 210px;
+  border:1px solid #b3b3b3;
+}
+.password button{
+  position: absolute;
+  left: 130px;
+  top: 160px;
+  font-size: 12px;
+  margin-top: 6px;
+  margin-right: 10px;
+  width: 80px;
+  height: 30px;
+  background: #a2d0f1;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+.password button:hover{
+  background: #1d86ca;
+}
+/*我的信息*/
+.myinfo table{
+  border-collapse: 0;
+  margin: 60px 55px;
+}
+.myinfo table tr{
+  height: 30px;
+}
+.myinfo table tr:first-child{
+  background: #1d86ca;
+}
+.myinfo table tr td{
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid #1d86ca;
+  width: 120px;
+  color: #494949;
+}
+.myinfo .sec_info{
+  width: 240px;
+}
+/*预约查询*/
+.order table{
+  margin-left: 40px;
+}
+.order table tr{
+  width: 750px;
+}
+.o_fir{
+  width: 130px;
+}
+.o_sec{
+  width: 220px;
+}
+.o_thi{
+  width: 80px;
+}
+.o_for{
+  width: 200px;
+}
+.order .order_info td:last-child{
+  width: 80px;
+  font-size: 12px;
+}
+.order_info{
+  color:#494949;
+}
+.order_info tr{
+  border-bottom:2px solid #ededed;
+  height: 40px;
+  line-height: 40px;
+}
+.order .order_info button{
+  color: #b9b9b9;
+  cursor: pointer;
+  background:none;
+  font-size:12px;
+}
+.order .order_info button:hover{
+  color: #1d86ca;
+}
+/*新闻文章*/
+.article p{
+  word-break:break-all;
+  display: inline-block;
+  margin-top: 20px;
+  width:820px;
+}
+.article span{
+  display:inline;
+}
+/*教师部分*/
+.mainlist .index{
+  border-bottom: 3px solid #1d86ca;
+}
+.T_fir_title{
+  width: 110px;
+}
+.T_sec_title{
+  width: 130px;
+}
+.T_thi_title{
+  width: 150px;
+}
+.T_for_title{
+  width: 80px;
+}
+.T_fif_title{
+  width: 140px;
+}
+.T_six_title{
+  width: 80px;
+}
+.T_six_title button{
+  float: right;
+  font-size: 12px;
+  margin-top: 6px;
+  margin-right: 0px;
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  background: #a2d0f1;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+.all_grade{
+  float: right;
+  font-size: 14px;
+  margin-top: 22px;
+  margin-right: 0px;
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  background: #a2d0f1;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+.all_grade:hover{
+  background: #1d86ca;
+}
+.background img{
+  position: absolute;
+  top: 34.65%;
+  left: 13.34%;
+  border:6px solid #1d86ca;
+  border-radius: 5px;
+}
+.loginlogo{
+  position: absolute;
+  left: 9.26%;
+  top: 7.875%;
+  width: 390px;
+  height: 130px;
+  background: url(../img/logoindex.png);
+  background-repeat: no-repeat;
+}
+.background{
+  background: #f2f2f2;
+  height: 100%;
+}
+.login{
+  background: #fff;
+  padding: 20px 40px;
+  width:300px;
+  height: 280px;
+  border-radius: 3px;
+  border: 4px solid #1d86ca;
+  position: absolute;
+  left: 59.26%;
+  top:22.05%;
+}
+.login span{
+  font-size: 16px;
+}
+.login .text{
+  border-radius: 5px;
+  height: 35px;
+  margin: 10px 0;
+  border:2px solid #1d86ca;
+  width: 200px;
+  padding: 0 10px;
+  line-height:35px;
+}
+.login .check{
+  margin-left:10px;
+  border-radius: 5px;
+  height: 25px;
+  margin: 10px 0;
+  border:2px solid #1d86ca;
+  width: 70px;
+  padding: 0 10px;
+  line-height:25px;
+}
+.login .checkcode{
+  width: 70px;
+  height: 30px;
+  background: blue;
+  position: absolute;
+  left: 190px;
+  top: 210px;
+}
+.login a{
+  font-size: 12px;
+  color: #b6b6b6;
+  position: absolute;
+  top: 220px;
+  left: 280px;
+}
+.login .choose{
+  margin-top: 10px;
+}
+.login button{
+  font-size: 14px;
+  width: 80px;
+  height: 30px;
+  position: absolute;
+  left: 240px;
+  top: 255px;
+  border-radius: 5px;
+  background: #a2d0f1;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+.login button:hover{
+  background: #1d86ca;
+}
+.login .refresh{
+	margin-left:10px;
+}
+.background .footer{
+  font-size: 12px;
+  color: #b6b6b6;
+  position: relative;
+  top: 94%;
+  margin-left: 33.36%;
+}
