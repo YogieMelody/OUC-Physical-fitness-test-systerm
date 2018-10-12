@@ -1,4 +1,4 @@
-<%@page import="sun.org.mozilla.javascript.internal.regexp.SubString"%>
+<%@ page import="sun.org.mozilla.javascript.internal.regexp.SubString"%>
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%@ page import="com.sports.dao.proxy.*"%>
 <%@ page import="com.sports.entity.*"%>

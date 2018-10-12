@@ -53,7 +53,7 @@ public class StringFilter implements Filter {
 			param = (String) params.nextElement();
 			String[] values = request.getParameterValues(param);
 			paramValue = "";
-			if (OK) {// 过滤字符串为0个时 不对字符过滤
+			if (OK) {// 杩囨护瀛楃涓蹭负0涓椂 涓嶅瀛楃杩囨护
 				for (int i = 0; i < values.length; i++)
 					paramValue = paramValue + values[i];
 				for (int i = 0; i < characterParams.length; i++)
@@ -68,7 +68,7 @@ public class StringFilter implements Filter {
 		// System.out.println(param+"="+paramValue+";");
 		if (status) {
 			PrintWriter out = servletresponse.getWriter();
-			out.print("<script language='javascript'>alert(\"对不起！您输入内容含有非法字符。\");"
+			out.print("<script language='javascript'>alert(\"瀵逛笉璧凤紒鎮ㄨ緭鍏ュ唴瀹瑰惈鏈夐潪娉曞瓧绗︺�俓\");"
 					// + servletrequest.getRequestURL()
 					+ "window.history.go(-1);</script>");
 		} else {
